@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Movies {
@@ -27,5 +28,11 @@ public class Movies {
 
       Collections.sort(movies);
         System.out.println("Sorted list of movies: " + movies);
+
+        Random random = new Random();
+        System.out.println("Random recommendation: " + movies.get(random.nextInt(movies.size())));
+
+
+
     }
 }
